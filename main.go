@@ -2,8 +2,12 @@ package main
 
 func main() {
 
-	cards := newDeck()
-	cards.saveToFile("my_cards")
+	//read from file
+	cards := newDeckFromFile("my_cards")
+	cards.print()
+
+	// cards := newDeck()
+	// cards.saveToFile("my_cards")
 
 	// hand, remainingCards := deal(cards, 5)
 
