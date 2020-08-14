@@ -6,6 +6,12 @@ import "fmt"
 //new deck type borrows this
 type deck []string
 
+//deal the deck
+func deal(d deck, handSize int) (deck, deck) {
+	//expect two vals to be returned
+	return d[:handSize], d[handSize:]
+}
+
 //returns a deck
 func newDeck() deck {
 	cards := deck{}
