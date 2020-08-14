@@ -1,14 +1,20 @@
 package main
 
 func main() {
+
+	cards := newDeck()
+	cards.print()
+
+	////////////
+
 	// print out single care
 	// card := newCard()
 	// fmt.Println(card)
 
 	// print mutliple cards -> slice of type deck
-	cards := deck{"Ace of diamonds", newCard()}
-	cards = append(cards, "Six of Spades")
-	cards.print()
+	// cards := deck{"Ace of diamonds", newCard()}
+	// cards = append(cards, "Six of Spades")
+	// cards.print()
 
 	// fmt.Println(cards)
 
@@ -18,6 +24,7 @@ func main() {
 	// }
 }
 
-func newCard() string {
-	return "five of diamonds"
-}
+//create new card
+// func newCard() string {
+// 	return "five of diamonds"
+// }
